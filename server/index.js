@@ -3,8 +3,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const authRoutes = require("./routes/auth");
-const friendRoutes = require("./routes/friend");
-const recommendationRoutes = require("./routes/recommendation");
+const friendRoutes = require("./routes/friends");
+const bcrypt = require('bcryptjs');
+const recommendationRoutes = require("./routes/recommendations");
 // this is a dotenv.config which helps to change .env file into .process.env.file
 dotenv.config();
 

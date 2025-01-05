@@ -7,6 +7,7 @@ router.get('/:userId', async (req, res) => {
   const { userId } = req.params;
 
   try {
+    
     // Fetch the user and populate their friends
     const user = await User.findById(userId).populate('friends');
 
